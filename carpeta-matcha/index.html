@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Rincón del Matcha 🍵</title>
+  
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <main class="tarjeta">
+    
+    <!-- Botón para cambiar el modo de color -->
+    <button id="btn-tema" class="btn-secundario">🌙 Modo Oscuro</button>
+
+    <header class="encabezado">
+      <div class="emoji">🍵</div>
+      <h1>Mi Pasión por el Matcha</h1>
+      <p class="subtitulo">El arte de la preparación artesanal japonesa</p>
+    </header>
+
+    <section class="seccion">
+      <h2>¿Por qué me gusta?</h2>
+      <p>
+        Preparar matcha no es solo hacer una bebida, es un momento de pausa y tranquilidad. 
+        Me encanta cuidar cada detalle: desde cernir el fino polvo verde brillante hasta 
+        crear una suave espuma usando el batidor de bambú.
+      </p>
+    </section>
+
+    <section class="seccion">
+      <h2>Mis Utensilios Básicos <span>(haz clic para revisar)</span></h2>
+      <ul class="lista-utensilios">
+        <li>🌿 <strong>Matcha Ceremonial:</strong> Té verde de gran calidad.</li>
+        <li>🥣 <strong>Chawan:</strong> Tazón de cerámica tradicional.</li>
+        <li>🎋 <strong>Chasen:</strong> Batidor de bambú para sacar espuma.</li>
+        <li>🥄 <strong>Chashaku:</strong> Cucharilla de bambú para medir.</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>El Ritual en 4 Pasos</h2>
+      <ol class="lista-pasos">
+        <li>Cernir 1 o 2 cucharaditas de matcha sobre el tazón.</li>
+        <li>Agregar un poco de agua caliente (aprox. 80°C).</li>
+        <li>Batir enérgicamente en forma de "W" con el <em>chasen</em>.</li>
+        <li>Disfrutar despacio de la espuma y el sabor rico y cremoso.</li>
+      </ol>
+
+      <!-- Temporizador interactivo -->
+      <div class="temporizador-box">
+        <p><strong>Cronómetro para batir:</strong></p>
+        <span id="pantalla-tiempo">15s</span>
+        <button id="btn-timer" class="btn-principal">▶ Empezar a Batir</button>
+      </div>
+    </section>
+
+    <div class="frase">
+      "一期一会 (Ichigo Ichie)"<br>
+      <span>Un encuentro, un instante único en la vida.</span>
+    </div>
+
+    <footer class="pie-pagina">
+      Hecho con ♡ y Matcha
+    </footer>
+
+  </main>
+
+  <!-- Enlace a tu código JavaScript -->
+  <script src="codigo.js"></script>
+</body>
+</html>

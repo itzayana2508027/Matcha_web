@@ -1,0 +1,228 @@
+/* ==========================================
+   ESTILOS GENERALES
+   ========================================== */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f3f7f4;
+  color: #2d3e32;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo oscuro que se activa desde JavaScript */
+body.modo-oscuro {
+  background-color: #1a241c;
+  color: #e0ece2;
+}
+
+body.modo-oscuro .tarjeta {
+  background-color: #243327;
+  border-color: #344a39;
+}
+
+body.modo-oscuro h1, 
+body.modo-oscuro h2 {
+  color: #a3c9ab;
+}
+
+body.modo-oscuro .lista-utensilios li {
+  background-color: #2d3e31;
+}
+
+body.modo-oscuro .frase {
+  background-color: #2b3d30;
+  color: #c4dcc7;
+}
+
+body.modo-oscuro .temporizador-box {
+  background-color: #2d3e31;
+}
+
+/* ==========================================
+   TARJETA CONTENEDORA
+   ========================================== */
+.tarjeta {
+  position: relative;
+  background-color: #ffffff;
+  max-width: 480px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 2px solid #e1ebe2;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+#btn-tema {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 1px solid #7b9683;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.btn-principal {
+  background-color: #4a6b53;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.btn-principal:hover {
+  background-color: #3b5c45;
+}
+
+/* ==========================================
+   ENCABEZADO Y SECCIONES
+   ========================================== */
+.encabezado {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.emoji {
+  font-size: 52px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  color: #3b5c45;
+  margin: 0;
+  font-size: 24px;
+}
+
+.subtitulo {
+  color: #7b9683;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.seccion {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Comfortaa', cursive;
+  color: #3b5c45;
+  font-size: 17px;
+  border-bottom: 2px dashed #cbe0cf;
+  padding-bottom: 6px;
+  margin-top: 20px;
+}
+
+h2 span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #8fa896;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ==========================================
+   LISTA INTERACTIVA DE UTENSILIOS
+   ========================================== */
+.lista-utensilios {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-utensilios li {
+  background-color: #f6faf7;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border-left: 4px solid #81a88b;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Clase que añade JS al hacer clic */
+.lista-utensilios li.completado {
+  text-decoration: line-through;
+  opacity: 0.5;
+  border-left-color: #ccc;
+}
+
+.lista-pasos {
+  padding-left: 20px;
+}
+
+.lista-pasos li {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* TEMPORIZADOR */
+.temporizador-box {
+  background-color: #f0f6f1;
+  padding: 12px;
+  border-radius: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.temporizador-box p {
+  margin: 0 0 5px 0;
+}
+
+#pantalla-tiempo {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  color: #3b5c45;
+}
+
+/* ==========================================
+   FRASE Y FOOTER
+   ========================================== */
+.frase {
+  background-color: #eaf2eb;
+  padding: 16px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #314d3a;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.frase span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #5c7865;
+  display: block;
+  margin-top: 4px;
+}
+
+.pie-pagina {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #9cb3a2;
+}
